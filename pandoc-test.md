@@ -61,7 +61,7 @@ method**
 
 **Order list request Version 0.9**
 
-**XML document encoding begins:** `<OrderListRequest version=”0.9”>...`
+**XML document encoding begins:** `<OrderListRequest version="0.9">...`
 
 **JSON document encoding begins:** `{ "OrderListRequest": { "version": "0.9"...`
 
@@ -127,10 +127,12 @@ method**
 <tr valign="top">
 <td>&numsp;5</td>
 <td><p>Document date/time: the date/time when the request was generated. Permitted formats are:</p>
-<p>YYYYMMDD</p>
-<p>YYYYMMDDTHHMM</p>
-<p>YYYYMMDDTHHMMZ (universal time)</p>
-<p>YYYYMMDDTHHMM±HHMM (time zone)</p>
+<blockquote>
+<p>YYYYMMDD<br/>
+YYYYMMDDTHHMM<br/>
+YYYYMMDDTHHMMZ (universal time)<br/>
+YYYYMMDDTHHMM±HHMM (time zone)</p>
+</blockquote>
 <p>where &quot;T&quot; represents itself, ie letter T</p></td>
 <td>D</td>
 <td><pre>IssueDateTime</pre></td>
