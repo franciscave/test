@@ -69,35 +69,35 @@ method**
 
 <table>
 <tbody>
-<tr class="even" valign="top">
+<tr valign="top">
   <th></th>
   <th>Description</th>
-  <th>M/D<br/>[2](#Notes)</th>
+  <th><a href="#Notes">[2]</a></th>
   <th>XML tag</th>
-  <th>R[3](#Notes)</th>
+  <th><a href="#Notes">[3]</a></th>
 </tr>
-<tr class="odd" valign="top">
+<tr valign="top">
 <td>&numsp;1</td>
 <td>A unique identifier for the sender of the request. An alphanumeric string not containing spaces or punctuation</td>
-<td>D[2](#Notes)</td>
-<td>ClientID</td>
+<td>D</td>
+<td><pre>ClientID</pre></td>
 <td></td>
 </tr>
-<tr class="even" valign="top">
+<tr valign="top">
 <td>&numsp;2</td>
 <td>A password to further authenticate the sender of the request</td>
 <td>D</td>
-<td>ClientPassword</td>
+<td><pre>ClientPassword</pre></td>
 <td></td>
 </tr>
-<tr class="odd" valign="top">
+<tr valign="top">
 <td>&numsp;3</td>
 <td>Account identifier. Mandatory in all order list requests.</td>
 <td>M</td>
-<td>AccountIdentifier.</td>
+<td><pre>AccountIdentifier.</pre></td>
 <td></td>
 </tr>
-<tr class="even" valign="top">
+<tr valign="top">
 <td></td>
 <td><p>A code value from a BIC-controlled codelist for the scheme used for the account identifier (see ONIX codelist 44). Permitted schemes are:</p>
 <blockquote>
@@ -107,24 +107,24 @@ method**
 <em>11</em> PubEasy PIN</p>
 </blockquote></td>
 <td>M</td>
-<td>AccountIDType</td>
+<td><pre>  AccountIDType</pre></td>
 <td></td>
 </tr>
-<tr class="odd" valign="top">
+<tr valign="top">
 <td></td>
 <td>Account identifier for this request, using the specified scheme</td>
 <td>M</td>
-<td>IDValue</td>
+<td><pre>  IDValue</pre></td>
 <td></td>
 </tr>
-<tr class="even" valign="top">
+<tr valign="top">
 <td>&numsp;4</td>
 <td>Identification number / string of this request</td>
 <td>D</td>
-<td>RequestNumber</td>
+<td><pre>RequestNumber</pre></td>
 <td></td>
 </tr>
-<tr class="odd" valign="top">
+<tr valign="top">
 <td>&numsp;5</td>
 <td><p>Document date/time: the date/time when the request was generated. Permitted formats are:</p>
 <p>YYYYMMDD</p>
@@ -133,59 +133,59 @@ method**
 <p>YYYYMMDDTHHMM±HHMM (time zone)</p>
 <p>where &quot;T&quot; represents itself, ie letter T</p></td>
 <td>D</td>
-<td>IssueDateTime</td>
+<td><pre>IssueDateTime</pre></td>
 <td></td>
 </tr>
-<tr class="even" valign="top">
+<tr valign="top">
 <td>&numsp;6</td>
 <td>Supplier to whom this request should be forwarded, if it is not addressed to the web service host (use only for requests sent to aggregation services).</td>
 <td>D</td>
-<td>SupplierIdentifier.</td>
+<td><pre>SupplierIdentifier.</pre></td>
 <td></td>
 </tr>
-<tr class="odd" valign="top">
+<tr valign="top">
 <td></td>
 <td>Supplier ID type - see ONIX codelist 92</td>
 <td>M</td>
-<td>SupplierIDType</td>
+<td><pre>  SupplierIDType</pre></td>
 <td></td>
 </tr>
-<tr class="even" valign="top">
+<tr valign="top">
 <td></td>
 <td>ID type name, only if ID type = proprietary</td>
 <td>D</td>
-<td>IDTypeName</td>
+<td><pre>  IDTypeName</pre></td>
 <td></td>
 </tr>
 <tr class="odd" valign="top">
 <td></td>
 <td>Identifier</td>
 <td>M</td>
-<td>IDValue</td>
+<td><pre>  IDValue</pre></td>
 <td></td>
 </tr>
-<tr class="even" valign="top">
+<tr valign="top">
 <td>&numsp;7</td>
 <td>Start date of the period for which the list of orders placed in that period is requested. – YYYYMMDD</td>
 <td>D</td>
-<td>PeriodStartDate</td>
+<td><pre>PeriodStartDate</pre></td>
 <td></td>
 </tr>
-<tr class="odd" valign="top">
+<tr valign="top">
 <td>&numsp;8</td>
 <td>End date of the period for which the list of orders placed in that period is requested. – YYYYMMDD</td>
 <td>D</td>
-<td>PeriodEndDate</td>
+<td><pre>PeriodEndDate</pre></td>
 <td></td>
 </tr>
-<tr class="even" valign="top">
+<tr valign="top">
 <td>&numsp;9</td>
 <td>Order number pattern to be matched. Use a regular expression that conforms to <a href="http://www.w3.org/TR/xmlschema11-2/#regexs">Appendix G of W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes</a>.</td>
 <td>D</td>
-<td>ReferenceNumberPattern</td>
+<td><pre>ReferenceNumberPattern</pre></td>
 <td></td>
 </tr>
-<tr class="odd" valign="top">
+<tr valign="top">
 <td>10</td>
 <td><p>Order line status has changed or not. Used to request a list of orders in which at least one order line status has changed, or no order line status has changed. If this element is included, the changed-after date must be specified (see line 11).</p>
 <blockquote>
@@ -193,14 +193,14 @@ method**
 <em>01</em> Order status has changed</p>
 </blockquote></td>
 <td>D</td>
-<td>OrderStatusChanged</td>
+<td><pre>OrderStatusChanged</pre></td>
 <td></td>
 </tr>
-<tr class="even" valign="top">
+<tr valign="top">
 <td>11</td>
 <td>Date after which the order line status has changed or not, depending upon the OrderStatusChanged code. Mandatory if OrderStatusChanged is included, otherwise not used. – YYYYMMDD</td>
 <td>D</td>
-<td>ChangedAfterDate</td>
+<td><pre>ChangedAfterDate</pre></td>
 <td></td>
 </tr>
 </tbody>
