@@ -1,6 +1,6 @@
 ![](media/image1.jpeg)
 
-### Book Industry Communication
+### *Book Industry Communication*
 ### BIC Library Web Services Standards
 
 # Retrieve Order List
