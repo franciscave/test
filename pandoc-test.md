@@ -207,111 +207,74 @@ method**
 </tbody>
 </table>
 
-*  
-Example of a Retrieve Order List Request XML payload using either the
+*Example of a Retrieve Order List Request XML payload using either the
 SOAP or the HTTP protocol and the HTTP POST method, in which the request
 is for all orders issued from 1 April 2015 onwards:*
 
-\<OrderListRequest version="0.9"
-
-xmlns="http://www.bic.org.uk/librarywebservices/orderList"\>
-
-\<AccountIdentifier\>
-
-\<AccountIDType\>01\</AccountIDType\>
-
-\<IDValue\>12345\</IDValue\>
-
-\</AccountIdentifier\>
-
-\<RequestNumber\>001\</RequestNumber\>
-
-\<IssueDateTime\>20180422T1525\</IssueDateTime\>
-
-\<PeriodStartDate\>20180401\</PeriodStartDate\>
-
-\</OrderListRequest\>
+```
+<OrderListRequest version="0.9" xmlns="http://www.bic.org.uk/librarywebservices/orderList">
+    <AccountIdentifier>
+        <AccountIDType>01</AccountIDType>
+        <IDValue>12345</IDValue>
+    </AccountIdentifier>
+    <RequestNumber>001</RequestNumber>
+    <IssueDateTime>20180422T1525</IssueDateTime>
+    <PeriodStartDate>20180401</PeriodStartDate>
+</OrderListRequest>
+```
 
 *Equivalent JSON payload:*
 
+```
 {
-
-"OrderListRequest": {
-
-"version": "0.9",
-
-"xmlns": "http://www.bic.org.uk/librarywebservices/orderList",
-
-"AccountIdentifier": {
-
-"AccountIDType": "01",
-
-"IDValue": "12345"
-
-},
-
-"RequestNumber": "001",
-
-"IssueDateTime": "20180422T1525",
-
-"PeriodStartDate": "20180401"
-
+    "OrderListRequest": {
+        "version": "0.9",
+        "xmlns": "http://www.bic.org.uk/librarywebservices/orderList",
+        "AccountIdentifier": {
+            "AccountIDType": "01",
+            "IDValue": "12345"
+        },
+        "RequestNumber": "001",
+        "IssueDateTime": "20180422T1525",
+        "PeriodStartDate": "20180401"
+    }
 }
-
-}
+```
 
 *Example of a Retrieve Order List Request XML payload using either the
 SOAP or the HTTP protocol and the HTTP POST method, in which the request
 is for all orders with order numbers that match the regular expression
 pattern ‘01020\\d+’ (i.e. numbers beginning ‘01020’):*
 
-\<OrderListRequest version="0.9"
-
-xmlns="http://www.bic.org.uk/librarywebservices/orderList"\>
-
-\<AccountIdentifier\>
-
-\<AccountIDType\>01\</AccountIDType\>
-
-\<IDValue\>12345\</IDValue\>
-
-\</AccountIdentifier\>
-
-\<RequestNumber\>001\</RequestNumber\>
-
-\<IssueDateTime\>20150422T1525\</IssueDateTime\>
-
-\<ReferenceNumberPattern\>01020\\d+\</ReferenceNumberPattern\>
-
-\</OrderListRequest\>
+```
+<OrderListRequest version="0.9" xmlns="http://www.bic.org.uk/librarywebservices/orderList">
+    <AccountIdentifier>
+        <AccountIDType>01</AccountIDType>
+        <IDValue>12345</IDValue>
+    </AccountIdentifier>
+    <RequestNumber>001</RequestNumber>
+    <IssueDateTime>20150422T1525</IssueDateTime>
+    <ReferenceNumberPattern>01020\d+</ReferenceNumberPattern>
+</OrderListRequest>
+```
 
 *Equivalent JSON payload:*
 
+```
 {
-
-"OrderListRequest": {
-
-"version": "0.9",
-
-"xmlns": "http://www.bic.org.uk/librarywebservices/orderList",
-
-"AccountIdentifier": {
-
-"AccountIDType": "01",
-
-"IDValue": "12345"
-
-},
-
-"RequestNumber": "001",
-
-"IssueDateTime": "20150422T1525",
-
-"ReferenceNumberPattern": "01020\\\\d+"
-
+    "OrderListRequest": {
+        "version": "0.9",
+        "xmlns": "http://www.bic.org.uk/librarywebservices/orderList",
+        "AccountIdentifier": {
+            "AccountIDType": "01",
+            "IDValue": "12345"
+        },
+        "RequestNumber": "001",
+        "IssueDateTime": "20150422T1525",
+        "ReferenceNumberPattern": "01020\\d+"
+    }
 }
-
-}
+```
 
 RETRIEVE ORDER LIST – RESPONSE
 
