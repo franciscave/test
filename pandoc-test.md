@@ -102,10 +102,12 @@ method**
 <tr class="even" valign="top">
 <td></td>
 <td><p>A code value from a BIC-controlled codelist for the scheme used for the account identifier (see ONIX codelist 44). Permitted schemes are:</p>
-<p><em>01</em> Proprietary</p>
-<p><em>06</em> EAN-UCC GLN</p>
-<p><em>07</em> SAN</p>
-<p><em>11</em> PubEasy PIN</p></td>
+<blockquote>
+<p><em>01</em> Proprietary<br/>
+<em>06</em> EAN-UCC GLN<br/>
+<em>07</em> SAN<br/>
+<em>11</em> PubEasy PIN</p>
+</blockquote></td>
 <td>M</td>
 <td>AccountIDType</td>
 <td></td>
