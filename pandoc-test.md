@@ -8,12 +8,9 @@
 
 Version 0.9, 6 September 2018
 
-**This document:**
-<http://www.bic.org.uk/files/pdfs/BICLWSOrderList-V0.9.pdf>  
-**XML schema:**
-<http://www.bic.org.uk/files/xml/BICLWSOrderList-V0.9.xsd>  
-**WSDL file:**  
-<http://www.bic.org.uk/files/xml/BICLWSOrderListSOAP-V0.9.wsdl>  
+**This document:** <http://www.bic.org.uk/files/pdfs/BICLWSOrderList-V0.9.pdf>  
+**XML schema:** <http://www.bic.org.uk/files/xml/BICLWSOrderList-V0.9.xsd>  
+**WSDL file:** <http://www.bic.org.uk/files/xml/BICLWSOrderListSOAP-V0.9.wsdl>  
 **XML namespace:** http://www.bic.org.uk/librarywebservices/orderList  
 **Next review date:** 1 July 2020
 
