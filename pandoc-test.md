@@ -1,4 +1,4 @@
-![](media/image1.jpeg)
+![](media/bic.png)
 
 ### *Book Industry Communication*
 ### BIC Library Web Services Standards
