@@ -41,7 +41,7 @@ Definitions, but in this case care must be taken to ensure that the WSDL
 Definitions that describe the actual implementation is functionally
 equivalent to the BIC WSDL Definitions.
 
-**Business requirements**
+### Business requirements
 
 There is a need for library buyers, including EDI users, to ensure that
 they are aware of all orders received and not yet fulfilled by a
@@ -54,34 +54,32 @@ This service will also enable an aggregation service to reconcile their
 system with those of their data suppliers, to check for missing
 documents and changes made outside their system.
 
-RETRIEVE ORDER LIST – REQUEST
+#### RETRIEVE ORDER LIST – REQUEST
 
 **Requests using SOAP or non-SOAP protocols and using the HTTP POST
 method**
 
-**Request document name and version**
+**Order list request Version 0.9**
 
-<table>
-<tbody>
-<tr class="odd" valign="top">
-<td>&numsp;&numsp;</td>
-<td><strong>Order list request Version 0.9</strong></td>
-<td><h1 id="section"></h1></td>
-<td><strong>&lt;OrderListRequest version=”0.9”&gt;<br />
-{ &quot;OrderListRequest&quot;: { &quot;version&quot;: ,...</strong></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+**XML document encoding begins:** `<OrderListRequest version=”0.9”>...`
+
+**JSON document encoding begins:** `{ "OrderListRequest": { "version": "0.9"...`
 
 **Request document content**
 
 <table>
 <tbody>
+<tr class="even" valign="top">
+  <th></th>
+  <th>Description</th>
+  <th>M/D<br/>[2](#Notes)</th>
+  <th>XML tag</th>
+  <th>R[3](#Notes)</th>
+</tr>
 <tr class="odd" valign="top">
 <td>&numsp;1</td>
 <td>A unique identifier for the sender of the request. An alphanumeric string not containing spaces or punctuation</td>
-<td>D[2]</td>
+<td>D[2](#Notes)</td>
 <td>ClientID</td>
 <td></td>
 </tr>
@@ -724,7 +722,7 @@ SOAP or the HTTP protocol and the HTTP POST method:*
 
 }
 
-1.  Throughout the term ‘HTTPS protocol’ is to be interpreted as a
+<a name="Notes"></a>1.  Throughout the term ‘HTTPS protocol’ is to be interpreted as a
     secure internet protocol that is implemented either at the
     application layer (i.e. HTTPS) or at the transport layer (e.g.
     SSL/TLS).
