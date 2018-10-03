@@ -1,10 +1,9 @@
 ![](media/image1.jpeg)
 
-***Book Industry Communication***
+### Book Industry Communication
+### BIC Library Web Services Standards
 
-**BIC Library Web Services Standards**
-
-**Retrieve Order List**
+# Retrieve Order List
 
 Version 0.9, 6 September 2018
 
