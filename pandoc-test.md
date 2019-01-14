@@ -71,9 +71,9 @@ documents and changes made outside their system.
 <tr valign="top">
   <th></th>
   <th>Description</th>
-  <th><a href="#Notes">[2]</a></th>
+  <th><a href="#Notes2">[2]</a></th>
   <th>XML tag</th>
-  <th><a href="#Notes">[3]</a></th>
+  <th><a href="#Notes3">[3]</a></th>
 </tr>
 <tr valign="top">
 <td>&numsp;1</td>
