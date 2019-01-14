@@ -724,13 +724,13 @@ SOAP or the HTTP protocol and the HTTP POST method:*
 
 }
 
-<a name="Notes"></a>1.  Throughout the term ‘HTTPS protocol’ is to be interpreted as a
+<a name="Notes1"></a>1.  Throughout the term ‘HTTPS protocol’ is to be interpreted as a
     secure internet protocol that is implemented either at the
     application layer (i.e. HTTPS) or at the transport layer (e.g.
     SSL/TLS).
 
-2.  In the third column “M” means mandatory and “D” means dependent upon
+<a name="Notes2"></a>2.  In the third column “M” means mandatory and “D” means dependent upon
     the business or message context.
 
-3.  An ‘R’ in the right-most column means that the element is
+<a name="Notes3"></a>3.  An ‘R’ in the right-most column means that the element is
     repeatable.
