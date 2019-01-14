@@ -120,10 +120,10 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 <tr class="odd">
 <td></td>
 <td><p>A code value from a BIC-controlled codelist for the scheme used for the account identifier (see ONIX codelist 44). Permitted schemes are:</p>
-<p><em>01</em> Proprietary</p>
-<p><em>06</em> EAN-UCC GLN</p>
-<p><em>07</em> SAN</p>
-<p><em>11</em> PubEasy PIN</p></td>
+<ul><li><em>01</em> Proprietary</li>
+<li><em>06</em> EAN-UCC GLN</li>
+<li><em>07</em> SAN</li>
+  <li><em>11</em> PubEasy PIN</li></ul></td>
 <td>M</td>
 <td>AccountIDType</td>
 <td></td>
