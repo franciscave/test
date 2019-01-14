@@ -6,7 +6,7 @@
 
 # Retrieve Quotes List
 
-Version 0.9, 6 September 2018
+**Version 0.9, 6 September 2018**
 
 **This document:**
 http://www.bic.org.uk/files/pdfs/BICLWSQuotesList-V0.9.pdf  
@@ -24,7 +24,7 @@ The use of this document is subject to license terms and conditions that
 can be found at <http://www.bic.org.uk/bicstandardslicence.pdf>.
 
 A Retrieve Quotes List Request may be implemented using either SOAP or
-the basic HTTPS protocol\[1\] and POST method. The payload of a Retrieve
+the basic HTTPS protocol[[1]](#Notes1) and POST method. The payload of a Retrieve
 Quotes List Request may be formatted either as an XML document or as an
 equivalent JSON document.
 
@@ -52,7 +52,7 @@ Definitions, but in this case care must be taken to ensure that the WSDL
 Definitions that describe the actual implementation is functionally
 equivalent to the BIC WSDL Definitions.
 
-**Business requirements**
+#### Business requirements
 
 There is a need for buyers, including EDI users, to ensure that they are
 aware of all quotes prepared by a particular supplier. This web service
@@ -81,30 +81,24 @@ This service will also enable an aggregation service to reconcile their
 system with those of their data suppliers, to check for missing
 documents and changes made outside their system.
 
-RETRIEVE QUOTES LIST – REQUEST
+### **REQUEST**
 
 Requests should include an XML or JSON document as specified below as
 the body of a request message.
 
-**Request document name and version**
+XML document encoding begins: `&lt;QuotesListRequest version=”0.9”&gt;...`
+
+JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 
 <table>
 <tbody>
-<tr class="odd">
-<td></td>
-<td><strong>Quotes list request Version 0.9</strong></td>
-<td><h1 id="section"></h1></td>
-<td><strong>&lt;QuotesListRequest version=”0.9”&gt;<br />
-{ "QuotesListRequest": { "version": ,...</strong></td>
-<td></td>
+<tr valign="top">
+  <th></th>
+  <th>Description</th>
+  <th><a href="#Notes2">[2]</a></th>
+  <th>XML tag</th>
+  <th><a href="#Notes3">[3]</a></th>
 </tr>
-</tbody>
-</table>
-
-**Request document content**
-
-<table>
-<tbody>
 <tr class="odd">
 <td></td>
 <td><strong>Request header</strong></td>
@@ -809,13 +803,15 @@ SOAP or the HTTPS protocol and the POST method:*
 
 }}
 
-1.  Throughout the term ‘HTTPS protocol’ is to be interpreted as a
+#### Notes
+
+<a name="Notes1"></a>1.  Throughout the term ‘HTTPS protocol’ is to be interpreted as a
     secure internet protocol that is implemented either at the
     application layer (i.e. HTTPS) or at the transport layer (e.g.
     SSL/TLS).
 
-2.  In the third column “M” means mandatory and “D” means dependent upon
+<a name="Notes2"></a>2.  In the third column “M” means mandatory and “D” means dependent upon
     the business or message context.
 
-3.  An ‘R’ in the right-most column means that the element is
+<a name="Notes3"></a>3.  An ‘R’ in the right-most column means that the element is
     repeatable.
