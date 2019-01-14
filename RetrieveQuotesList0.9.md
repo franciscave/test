@@ -8,12 +8,9 @@
 
 **Version 0.9, 6 September 2018**
 
-**This document:**
-http://www.bic.org.uk/files/pdfs/BICLWSQuotesList-V0.9.pdf  
-**XML schema:**
-http://www.bic.org.uk/files/xml/BICLWSQuotesList-V0.9.xsd  
-**WSDL file:**  
-http://www.bic.org.uk/files/xml/BICLWSQuotesListSOAP-V0.9.wsdl  
+**This document:** http://www.bic.org.uk/files/pdfs/BICLWSQuotesList-V0.9.pdf  
+**XML schema:** http://www.bic.org.uk/files/xml/BICLWSQuotesList-V0.9.xsd  
+**WSDL file:** http://www.bic.org.uk/files/xml/BICLWSQuotesListSOAP-V0.9.wsdl  
 **XML namespace:** http://www.bic.org.uk/librarywebservices/quotesList  
 **Latest next review date:** 1 July 2020
 
@@ -98,13 +95,6 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
   <th><a href="#Notes2">[2]</a></th>
   <th>XML tag</th>
   <th><a href="#Notes3">[3]</a></th>
-</tr>
-<tr class="odd">
-<td></td>
-<td><strong>Request header</strong></td>
-<td><h1 id="m">M[2]</h1></td>
-<td><strong>Header.</strong></td>
-<td>[3]</td>
 </tr>
 <tr class="even">
 <td>1</td>
