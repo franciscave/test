@@ -1,10 +1,10 @@
 ![BIC LOGO](media/bic.png)
 
-***Book Industry Communication***
+### *Book Industry Communication*
 
-**BIC Library Web Services API Standards**
+## BIC Library Web Services API Standards
 
-**Retrieve Quotes List**
+# Retrieve Quotes List
 
 Version 0.9, 6 September 2018
 
