@@ -54,10 +54,10 @@ This service will also enable an aggregation service to reconcile their
 system with those of their data suppliers, to check for missing
 documents and changes made outside their system.
 
-#### RETRIEVE ORDER LIST – REQUEST
+### RETRIEVE ORDER LIST – REQUEST
 
-**Requests using SOAP or non-SOAP protocols and using the HTTP POST
-method**
+#### Requests using SOAP or non-SOAP protocols and using the HTTP POST
+method
 
 **Order list request Version 0.9**
 
