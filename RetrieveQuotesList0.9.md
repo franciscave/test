@@ -1,4 +1,4 @@
-![BIC LOGO](media/image1.jpeg)
+![BIC LOGO](media/bic.png)
 
 ***Book Industry Communication***
 
