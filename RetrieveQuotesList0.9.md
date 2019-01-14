@@ -98,11 +98,9 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 </tr>
 <tr class="even">
 <td>1</td>
-<td><blockquote>
-<p>A unique identifier for the sender of the request. An alphanumeric string not containing spaces or punctuation</p>
-</blockquote></td>
+<td>A unique identifier for the sender of the request. An alphanumeric string not containing spaces or punctuation</td>
 <td>D</td>
-<td>ClientID</td>
+<td>`ClientID`</td>
 <td></td>
 </tr>
 <tr class="odd">
