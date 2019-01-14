@@ -2,7 +2,7 @@
 
 ### *Book Industry Communication*
 
-## BIC Library Web Services API Standards
+### BIC Library Web Services API Standards
 
 # Retrieve Quotes List
 
