@@ -54,17 +54,14 @@ This service will also enable an aggregation service to reconcile their
 system with those of their data suppliers, to check for missing
 documents and changes made outside their system.
 
-### **RETRIEVE ORDER LIST – REQUEST**
+### **REQUEST**
 
-#### Requests using SOAP or non-SOAP protocols and using the HTTP POST method
-
-**Order list request Version 0.9**
+Requests should include an XML or JSON document as specified below as
+the body of a request message.
 
 **XML document encoding begins:** `<OrderListRequest version="0.9">...`
 
 **JSON document encoding begins:** `{ "OrderListRequest": { "version": "0.9"...`
-
-**Request document content**
 
 <table>
 <tbody>
