@@ -96,28 +96,28 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
   <th>XML tag</th>
   <th><a href="#Notes3">[3]</a></th>
 </tr>
-<tr class="even">
+<tr valign="top">
 <td>1</td>
 <td>A unique identifier for the sender of the request. An alphanumeric string not containing spaces or punctuation</td>
 <td>D</td>
   <td><pre>ClientID</pre></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr valign="top">
 <td>2</td>
 <td>A password to further authenticate the sender of the request</td>
 <td>D</td>
   <td><pre>ClientPassword</pre></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr valign="top">
 <td>3</td>
 <td>Account identifier.</td>
 <td>D</td>
   <td><pre>AccountIdentifier</pre></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr valign="top">
 <td></td>
 <td><p>A code value from a BIC-controlled codelist for the scheme used for the account identifier (see ONIX codelist 44). Permitted schemes are:</p>
 <ul><li><em>01</em> Proprietary</li>
@@ -125,43 +125,43 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 <li><em>07</em> SAN</li>
   <li><em>11</em> PubEasy PIN</li></ul></td>
 <td>M</td>
-<td>AccountIDType</td>
+  <td><pre>  AccountIDType</pre></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr valign="top">
 <td></td>
 <td>Account identifier for this request, using the specified scheme</td>
 <td>M</td>
-<td>IDValue</td>
+  <td><pre>  IDValue</pre></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr valign="top">
 <td>4</td>
 <td>Identification number / string of this request</td>
 <td>D</td>
-<td>RequestNumber</td>
+  <td><pre>RequestNumber</pre></td>
 <td></td>
 </tr>
-<tr class="even">
+<tr valign="top">
 <td>5</td>
 <td><p>Document date/time: the date/time when the request was generated. Permitted formats are:</p>
-<p>YYYYMMDD</p>
-<p>YYYYMMDDTHHMM</p>
-<p>YYYYMMDDTHHMMZ (universal time)</p>
-<p>YYYYMMDDTHHMM±HHMM (time zone)</p>
-<p>where "T" represents itself, ie letter T</p></td>
+  <ul><li><pre>YYYYMMDD</pre></li>
+<li><pre>YYYYMMDDTHHMM</pre></li>
+<li><pre>YYYYMMDDTHHMMZ</pre> (universal time)</li>
+  <li><pre>YYYYMMDDTHHMM±HHMM</pre> (time zone)</li></ul>
+  <p>where "<pre>T</pre>" represents itself, ie letter T</p></td>
 <td>D</td>
-<td>IssueDateTime</td>
+<td><pre>IssueDateTime</pre></td>
 <td></td>
 </tr>
-<tr class="odd">
+<trvalign="top">
 <td>6</td>
 <td>References. If included, must contain a reference number or a reference date-time or both.</td>
 <td>D</td>
-<td>ReferenceCoded.</td>
+<td><pre>ReferenceCoded</pre></td>
 <td>R</td>
 </tr>
-<tr class="even">
+<tr valign="top">
 <td></td>
 <td>Reference type<br />
 <em>16</em> Contract reference<br />
@@ -171,63 +171,63 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 <td>ReferenceTypeCode</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr valign="top">
 <td></td>
 <td>Reference</td>
 <td>D</td>
 <td>ReferenceNumber</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr valign="top">
 <td></td>
 <td>Reference date-time (for format options see line 5)</td>
 <td>D</td>
 <td>ReferenceDateTime</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr valign="top">
 <td>7</td>
 <td>Supplier to whom this request should be forwarded, if it is not addressed to the web service host (use only for requests sent to aggregation services).</td>
 <td>D</td>
 <td>SupplierIdentifier.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr valign="top">
 <td></td>
 <td>Supplier ID type - see ONIX codelist 92</td>
 <td>M</td>
 <td>SupplierIDType</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr valign="top">
 <td></td>
 <td>ID type name, only if ID type = proprietary</td>
 <td>D</td>
 <td>IDTypeName</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr valign="top">
 <td></td>
 <td>Identifier</td>
 <td>M</td>
 <td>IDValue</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr valign="top">
 <td>8</td>
 <td>Start date of the period for which the list of quotations prepared in that period is requested. – YYYYMDD</td>
 <td>D</td>
 <td>PeriodStartDate</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr valign="top">
 <td>9</td>
 <td>End date of the period for which the list of quotations prepared in that period is requested. – YYYYMMDD</td>
 <td>D</td>
 <td>PeriodEndDate</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr valign="top">
 <td>10</td>
 <td>Quotation number pattern to be matched. Use a regular expression that conforms to <a href="http://www.w3.org/TR/xmlschema11-2/#regexs">Appendix G of W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes</a>.</td>
 <td>D</td>
