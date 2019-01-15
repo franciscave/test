@@ -241,10 +241,8 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 SOAP or the HTTPS protocol and the POST method, in which the request is
 for all quotes issued from 1 April 2018 onwards:*
 
-\<QuotesListRequest version="0.9" xmlns="http://www.bic.org.uk/librarywebservices/quotesList"\>
-
-\<AccountIdentifier\>
-
+\<QuotesListRequest version="0.9" xmlns="http://www.bic.org.uk/librarywebservices/quotesList"\><br/>
+\<AccountIdentifier\><br/>
 \<AccountIDType\>01\</AccountIDType\>
 
 \<IDValue\>12345\</IDValue\>
