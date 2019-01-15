@@ -149,7 +149,7 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 <li>YYYYMMDDTHHMM</li>
 <li>YYYYMMDDTHHMMZ (universal time)</li>
 <li>YYYYMMDDTHHMM±HHMM (time zone)</li></ul>
-<p>where "<pre>T</pre>" represents itself, ie letter T</p></td>
+<p>where `T` represents itself, ie letter T</p></td>
 <td>D</td>
 <td><pre>IssueDateTime</pre></td>
 <td></td>
