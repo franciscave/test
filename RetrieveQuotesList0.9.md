@@ -241,106 +241,72 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 SOAP or the HTTPS protocol and the POST method, in which the request is
 for all quotes issued from 1 April 2018 onwards:*
 
-\<QuotesListRequest version="0.9" xmlns="http://www.bic.org.uk/librarywebservices/quotesList"\><br/>
-\<AccountIdentifier\><br/>
+```
+\<QuotesListRequest version="0.9" xmlns="http://www.bic.org.uk/librarywebservices/quotesList"\>
+\<AccountIdentifier\>
 \<AccountIDType\>01\</AccountIDType\>
-
 \<IDValue\>12345\</IDValue\>
-
 \</AccountIdentifier\>
-
 \<RequestNumber\>001\</RequestNumber\>
-
 \<IssueDateTime\>20180422T1525\</IssueDateTime\>
-
 \<PeriodStartDate\>20180401\</PeriodStartDate\>
-
 \</QuotesListRequest\>
-
+```
 
 *JSON equivalent of the above payload:*
 
+```
 {
-
 "QuotesListRequest": {
-
 "version": "0.9",
-
 "xmlns": "http://www.bic.org.uk/librarywebservices/quotesList",
-
 "AccountIdentifier": {
-
 "AccountIDType": "01",
-
 "IDValue": "12345"
-
 },
-
 "RequestNumber": "001",
-
 "IssueDateTime": "20180422T1525",
-
 "PeriodStartDate": "20180401"
-
 }
-
 }
+```
 
-*  
-Example of a Retrieve Quotes List Request XML payload using either the
+*Example of a Retrieve Quotes List Request XML payload using either the
 SOAP or the HTTPS protocol and the POST method, in which the request is
 for all quotes with numbers that match the regular expression pattern
 ‘01020\\d+’ (i.e. numbers beginning ‘01020’):*
 
-\<QuotesListRequest version="0.9"
-
-xmlns="http://www.bic.org.uk/librarywebservices/quotesList"\>
-
+```
+\<QuotesListRequest version="0.9" xmlns="http://www.bic.org.uk/librarywebservices/quotesList"\>
 \<AccountIdentifier\>
-
 \<AccountIDType\>01\</AccountIDType\>
-
 \<IDValue\>12345\</IDValue\>
-
 \</AccountIdentifier\>
-
 \<RequestNumber\>001\</RequestNumber\>
-
 \<IssueDateTime\>20180422T1525\</IssueDateTime\>
-
 \<ReferenceNumberPattern\>01020\\d+\</ReferenceNumberPattern\>
-
 \</QuotesListRequest\>
+```
 
 *JSON equivalent of the above payload:*
 
+```
 {
-
 "QuotesListRequest": {
-
 "version": "0.9",
-
 "xmlns": "http://www.bic.org.uk/librarywebservices/quotesList",
-
 "AccountIdentifier": {
-
 "AccountIDType": "01",
-
 "IDValue": "12345"
-
 },
-
 "RequestNumber": "001",
-
 "IssueDateTime": "20180422T1525",
-
 "ReferenceNumberPattern": "01020\\\\d+"
-
 }
-
 }
+```
 
-RETRIEVE QUOTES LIST – RESPONSE
+### **RESPONSE**
 
 The Response will use the protocol corresponding to the Request. If the
 Request uses the basic HTTPS protocol, the Response will be an XML or
