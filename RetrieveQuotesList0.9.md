@@ -154,7 +154,7 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 <td><pre>IssueDateTime</pre></td>
 <td></td>
 </tr>
-<trvalign="top">
+<tr valign="top">
 <td>6</td>
 <td>References. If included, must contain a reference number or a reference date-time or both.</td>
 <td>D</td>
@@ -168,99 +168,89 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 <li><em>35</em> Library’s supplier reference</li>
 <li><em>36</em> Supplier’s library customer reference</li></ul></td>
 <td>M</td>
-<td><pre>ReferenceTypeCode</pre></td>
+<td><pre>  ReferenceTypeCode</pre></td>
 <td></td>
 </tr>
 <tr valign="top">
 <td></td>
 <td>Reference</td>
 <td>D</td>
-<td>ReferenceNumber</td>
+<td><pre>  ReferenceNumber</pre></td>
 <td></td>
 </tr>
 <tr valign="top">
 <td></td>
 <td>Reference date-time (for format options see line 5)</td>
 <td>D</td>
-<td>ReferenceDateTime</td>
+<td><pre>  ReferenceDateTime</pre></td>
 <td></td>
 </tr>
 <tr valign="top">
 <td>7</td>
 <td>Supplier to whom this request should be forwarded, if it is not addressed to the web service host (use only for requests sent to aggregation services).</td>
 <td>D</td>
-<td>SupplierIdentifier.</td>
+<td><pre>SupplierIdentifier</pre></td>
 <td></td>
 </tr>
 <tr valign="top">
 <td></td>
 <td>Supplier ID type - see ONIX codelist 92</td>
 <td>M</td>
-<td>SupplierIDType</td>
+<td><pre>  SupplierIDType</pre></td>
 <td></td>
 </tr>
 <tr valign="top">
 <td></td>
 <td>ID type name, only if ID type = proprietary</td>
 <td>D</td>
-<td>IDTypeName</td>
+<td><pre>  IDTypeName</pre></td>
 <td></td>
 </tr>
 <tr valign="top">
 <td></td>
 <td>Identifier</td>
 <td>M</td>
-<td>IDValue</td>
+<td><pre>  IDValue</pre></td>
 <td></td>
 </tr>
 <tr valign="top">
 <td>8</td>
 <td>Start date of the period for which the list of quotations prepared in that period is requested. – YYYYMDD</td>
 <td>D</td>
-<td>PeriodStartDate</td>
+<td><pre>PeriodStartDate</pre></td>
 <td></td>
 </tr>
 <tr valign="top">
 <td>9</td>
 <td>End date of the period for which the list of quotations prepared in that period is requested. – YYYYMMDD</td>
 <td>D</td>
-<td>PeriodEndDate</td>
+<td><pre>PeriodEndDate</pre></td>
 <td></td>
 </tr>
 <tr valign="top">
 <td>10</td>
 <td>Quotation number pattern to be matched. Use a regular expression that conforms to <a href="http://www.w3.org/TR/xmlschema11-2/#regexs">Appendix G of W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes</a>.</td>
 <td>D</td>
-<td>ReferenceNumberPattern</td>
+<td><pre>ReferenceNumberPattern</pre></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
-*  
-Example of a Retrieve Quotes List Request XML payload using either the
+*Example of a Retrieve Quotes List Request XML payload using either the
 SOAP or the HTTPS protocol and the POST method, in which the request is
 for all quotes issued from 1 April 2018 onwards:*
 
-\<QuotesListRequest version="0.9"
-
+`\<QuotesListRequest version="0.9"
 xmlns="http://www.bic.org.uk/librarywebservices/quotesList"\>
-
 \<AccountIdentifier\>
-
 \<AccountIDType\>01\</AccountIDType\>
-
 \<IDValue\>12345\</IDValue\>
-
 \</AccountIdentifier\>
-
 \<RequestNumber\>001\</RequestNumber\>
-
 \<IssueDateTime\>20180422T1525\</IssueDateTime\>
-
 \<PeriodStartDate\>20180401\</PeriodStartDate\>
-
-\</QuotesListRequest\>
+\</QuotesListRequest\>`
 
 *JSON equivalent of the above payload:*
 
