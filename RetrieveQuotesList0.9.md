@@ -145,10 +145,10 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 <tr valign="top">
 <td>5</td>
 <td><p>Document date/time: the date/time when the request was generated. Permitted formats are:</p>
-<ul><li><pre>YYYYMMDD</pre></li>
-<li><pre>YYYYMMDDTHHMM</pre></li>
-<li><pre>YYYYMMDDTHHMMZ</pre> (universal time)</li>
-<li><pre>YYYYMMDDTHHMM±HHMM</pre> (time zone)</li></ul>
+<ul><li>YYYYMMDD</li>
+<li>YYYYMMDDTHHMM</li>
+<li>YYYYMMDDTHHMMZ (universal time)</li>
+<li>YYYYMMDDTHHMM±HHMM (time zone)</li></ul>
 <p>where "<pre>T</pre>" represents itself, ie letter T</p></td>
 <td>D</td>
 <td><pre>IssueDateTime</pre></td>
