@@ -149,7 +149,7 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 <li>YYYYMMDDTHHMM</li>
 <li>YYYYMMDDTHHMMZ (universal time)</li>
 <li>YYYYMMDDTHHMM±HHMM (time zone)</li></ul>
-<p>where `T` represents itself, ie letter T</p></td>
+<p>where T represents itself, ie letter T</p></td>
 <td>D</td>
 <td><pre>IssueDateTime</pre></td>
 <td></td>
@@ -163,12 +163,12 @@ JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 </tr>
 <tr valign="top">
 <td></td>
-<td>Reference type<br />
-<em>16</em> Contract reference<br />
-<em>35</em> Library’s supplier reference<br />
-<em>36</em> Supplier’s library customer reference</td>
+<td><p>Reference type:</p>
+<ul><li><em>16</em> Contract reference</li>
+<li><em>35</em> Library’s supplier reference</li>
+<li><em>36</em> Supplier’s library customer reference</li></ul></td>
 <td>M</td>
-<td>ReferenceTypeCode</td>
+<td><pre>ReferenceTypeCode</pre></td>
 <td></td>
 </tr>
 <tr valign="top">
