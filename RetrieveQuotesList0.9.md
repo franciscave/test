@@ -83,7 +83,7 @@ documents and changes made outside their system.
 Requests should include an XML or JSON document as specified below as
 the body of a request message.
 
-XML document encoding begins: `&lt;QuotesListRequest version=”0.9”&gt;...`
+XML document encoding begins: `<QuotesListRequest version=”0.9”>...`
 
 JSON document encoding begins: `{ "QuotesListRequest": { "version": ,...`
 
